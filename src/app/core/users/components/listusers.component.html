@@ -1,0 +1,34 @@
+<div class="container">
+  <h1 class="p-5" *ngIf="isLoaded">Liste des utilisateurs </h1>
+  <span *ngIf="!isLoaded">Chargement en cours </span>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Prénom</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Editer</th>
+        <th scope="col">Supprimer</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let user of listUsers">
+      <tr>
+        <th scope="row">{{ user.id }}</th>
+        <td> {{ user.first_name}} </td>
+        <td> {{user.last_name}} </td>
+        <td><button class="btn btn-success" (click)=onEdit(user.id)>Editer</button></td>
+        <td><button class="btn btn-danger" (click)=onDelete(user.id)>Supprimer</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+  <div>
+ <form >
+      <label class="form-label" for="first_name">Prénom</label>
+      <input class="form-control" name="first_name" type="text" id="first_name" [(ngModel)]="first_name">
+      <label class="form-label" for="last_name">Nom</label>
+      <input class="form-control" name="last_name" type="text" id="last_name" [(ngModel)]="last_name">
+      <button class="form-control btn btn-primary mt-4" (click)="onAdd(last_name, first_name)">Ajouter</button>
+    </form> 
+  </div>
+</div>

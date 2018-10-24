@@ -1,0 +1,9 @@
+<div class="text-center">
+  <form class="form-signin mx-auto" (ngSubmit)="login()" [formGroup]="loginForm">
+    <label for="first_name"></label> <input class="form-control" type="text" name="first_name" placeholder="Prénom" id="first_name"
+      formControlName="first_name" required>
+    <label for="last_name"></label> <input class="form-control" type="text" name="last_name" placeholder="Nom"
+      id="last_name" formControlName="last_name" required>
+    <button class="btn btn-block btn-primary my-4" type="submit">Connexion</button>
+  </form>
+</div>

@@ -1,0 +1,84 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Customer001",
+      "email": "customer001@email.com",
+      "tel": "0526252525"
+    },
+    {
+      "id": 2,
+      "name": "Customer002",
+      "email": "customer002@email.com",
+      "tel": "0527252525"
+    },
+    {
+      "id": 3,
+      "name": "Customer003",
+      "email": "customer003@email.com",
+      "tel": "0528252525"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "first_name": "Christophe",
+      "last_name": "Germain",
+      "token": "admin"
+    },
+    {
+      "id": 2,
+      "first_name": "Florent",
+      "last_name": "Fardel",
+      "token": "simple"
+    },
+    {
+      "id": 3,
+      "first_name": "Saïd",
+      "last_name": "Argoug",
+      "token": "simple"
+    },
+    {
+      "first_name": "yoyo",
+      "last_name": "tata",
+      "id": 4
+    }
+  ],
+  "Hero": [
+    {
+      "id": 1,
+      "name": "Whirlwind",
+      "addresses": [
+        {
+          "street": "123 Main",
+          "city": "Anywhere",
+          "state": "CA",
+          "zip": "94801"
+        },
+        {
+          "street": "456 Maple",
+          "city": "Somewhere",
+          "state": "VA",
+          "zip": "23226"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bombastic",
+      "addresses": [
+        {
+          "street": "789 Elm",
+          "city": "Smallville",
+          "state": "OH",
+          "zip": "04501"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Magneta",
+      "addresses": []
+    }
+  ]
+}
